@@ -37,7 +37,6 @@ After the package is installed, you can publish the migrations and seeders to yo
 
 The package includes migrations for the `car_brands` and `car_models` tables. To publish them, run:
 
-    ```
     php artisan vendor:publish --provider="Car\BrandsModels\CarBrandsModelsServiceProvider" --tag="migrations"
 
 
@@ -47,9 +46,7 @@ This will copy the migrations to your Laravel project's `database/migrations` di
 
 The package also includes seeders to populate the tables with car brands and models. To publish the seeders, run:
 
-    ```
     php artisan vendor:publish --provider="Car\BrandsModels\CarBrandsModelsServiceProvider" --tag="seeders"
-
 
 ### 3. Run Migrations and Seeders
 
