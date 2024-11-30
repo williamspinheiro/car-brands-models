@@ -22,7 +22,7 @@ You can install this package into your Laravel project in two ways: via GitHub o
         }
     ],
     "require": {
-        "williamspinheiro/car-brands-models": "dev-main"
+        "williamspinheiro/car-brands-models": "v1.0.0"
     }
    ```
 

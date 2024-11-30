@@ -21,12 +21,7 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/williamspinheiro/car-brands-models"
-        }
-    ]
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "require": {}
 }
