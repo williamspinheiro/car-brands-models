@@ -16,11 +16,14 @@ You can install this package into your Laravel project in two ways: via GitHub o
 
    ```json
    "repositories": [
-       {
-           "type": "vcs",
-           "url": "https://github.com/williamspinheiro/car-brands-models"
-       }
-   ]
+        {
+            "type": "vcs",
+            "url": "https://github.com/williamspinheiro/car-brands-models"
+        }
+    ],
+    "require": {
+        "williamspinheiro/car-brands-models": "dev-main"
+    }
    ```
 
 2. Install the package using Composer:
