@@ -1,5 +1,7 @@
 <?php
 
+namespace Car\BrandsModels;
+
 use Illuminate\Support\ServiceProvider;
 
 class BrandsModelsServiceProvider extends ServiceProvider
