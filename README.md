@@ -6,31 +6,15 @@ This package provides an easy way to manage car brands and models within a Larav
 
 ### 1. Add the package to your Laravel project
 
-You can install this package into your Laravel project in two ways: via GitHub or through Composer.
+You can install this package into your Laravel project easily via Composer.
 
-#### A. Using GitHub
+1. Install the package using Composer:
 
-1. Add the repository to your `composer.json`:
-
-   Open your `composer.json` file and add the following inside the `"repositories"` key:
-
-   ```json
-   "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/williamspinheiro/car-brands-models"
-        }
-    ],
-    "require": {
-        "williamspinheiro/car-brands-models": "v1.0.0"
-    }
-   ```
-
-2. Install the package using Composer:
-
+    ```bash
+    composer require car/brands-models
     ```
-    composer require williamspinheiro/car-brands-models
-    ```
+
+This will download and install the latest stable version of the package directly from Packagist.
 
 ### 2. Publish Migrations and Seeders
 
