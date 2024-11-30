@@ -49,7 +49,6 @@ The package also includes seeders to populate the tables with car brands and mod
 
     ```
     php artisan vendor:publish --provider="Car\BrandsModels\CarBrandsModelsServiceProvider" --tag="seeders"
-
     ```
 
 ### 3. Run Migrations and Seeders
