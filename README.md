@@ -22,10 +22,8 @@ After the package is installed, you can publish the migrations and seeders to yo
 
 #### Publish Everything at Once:
 To publish both migrations and seeders in one command, run:
-
-    ```bash
+    
     php artisan vendor:publish --provider="Car\BrandsModels\BrandsModelsServiceProvider"
-    ```
 
 This will copy the migrations and seeders to your Laravel project's `database/migrations` and `database/seeders` directories
 
@@ -33,9 +31,7 @@ This will copy the migrations and seeders to your Laravel project's `database/mi
 
 If you prefer to publish only the migrations, you can run:
     
-    ```bash
     php artisan vendor:publish --provider="Car\BrandsModels\BrandsModelsServiceProvider" --tag="car-brands-models-migrations"
-    ```
 
 This will copy the migrations for the `car_brands` and `car_models` tables to the `database/migrations` directory.
 
@@ -43,9 +39,7 @@ This will copy the migrations for the `car_brands` and `car_models` tables to th
 
 To publish only the seeders, run:
 
-    ```bash
     php artisan vendor:publish --provider="Car\BrandsModels\BrandsModelsServiceProvider" --tag="car-brands-models-seeders"
-    ```
 
 This will copy the seeders for populating the tables with car brands and models to the `database/seeders` directory.
 
@@ -53,12 +47,9 @@ This will copy the seeders for populating the tables with car brands and models 
 
 In some cases, you may need to use the `--force` option if there are restrictions preventing the files from being published, such as permission issues or conflicts. The `--force` flag ensures the files are copied successfully.
 
-    ```bash
+
     php artisan vendor:publish --provider="Car\BrandsModels\BrandsModelsServiceProvider" --tag="car-brands-models-migrations" --force
-    ```
-    ```bash
     php artisan vendor:publish --provider="Car\BrandsModels\BrandsModelsServiceProvider" --tag="car-brands-models-seeders" --force
-    ```
 
 ### 3. Run Migrations and Seeders
 
