@@ -73,8 +73,3 @@ Once the package is installed, you can use the `car_brands` and `car_models` tab
 
 If you encounter any issues or have suggestions for improving the package, feel free to open an issue or a pull request on the [GitHub repository](https://github.com/williamspinheiro/car-brands-models)
 .
-
-### 6. License
-
-This package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT)
-.
