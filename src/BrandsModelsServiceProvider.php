@@ -11,14 +11,18 @@ class BrandsModelsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Load Migrations
+        // Carregar migrações automaticamente
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        // Publish seeders
+        // Publicar migrações explicitamente com o prefixo car
         $this->publishes([
-            __DIR__.'/../database/seeders/CarBrandsSeeder.php' => database_path('seeders/CarBrandsSeeder.php'),
-            __DIR__.'/../database/seeders/CarModelsSeeder.php' => database_path('seeders/CarModelsSeeder.php'),
-        ], 'brands-models-seeders');
+            __DIR__.'/../database/migrations' => database_path('migrations'),
+        ], 'car-brands-models-migrations');
+
+        // Publicar seeders com o prefixo car
+        $this->publishes([
+            __DIR__.'/../database/seeders' => database_path('seeders'),
+        ], 'car-brands-models-seeders');
     }
 
     /**
