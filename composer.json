@@ -1,0 +1,26 @@
+{
+    "name": "car/brands-models",
+    "description": "Package for managing car brands and models.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Pinheiro",
+            "email": "william.pinheiro@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Car\\BrandsModels\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Car\\BrandsModels\\BrandsModelsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
